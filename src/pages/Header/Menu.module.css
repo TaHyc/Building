@@ -1,10 +1,9 @@
 .nav{
-  padding: 15px 9vw 15px 9vw;
+padding: 1.6vw 9vw 1.6vw 9vw;
 width: 70%;
 margin: auto;
-height: 6vw;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   background: linear-gradient(90deg, rgba(246, 246, 246, 0) 1.47%, rgba(163, 210, 155, 0.92) 7.25%, #319F1C 14.68%, #309E1B 50.68%, #319F1C 84.33%, rgba(147, 202, 137, 0.79) 91.68%, rgba(246, 246, 246, 0) 99.05%);
@@ -16,25 +15,14 @@ z-index: 1;
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 500;
-font-size: 1.3vw;
+font-size: 1.5vw;
 color: #FFFFFF;
 text-decoration: none;
-text-transform: uppercase;
 white-space: nowrap;
 }
 .arrDown{
   width: 0.8vw;
   margin-left: 2px;
-}
-@media(max-width:700px){
-  .nav{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  }
-   .item{
-    font-size: 20px;
-  }
 }
 @media(max-width:1000px){
   .nav{
@@ -46,4 +34,33 @@ white-space: nowrap;
   .item{
     font-size: 2.5vw;
   }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+.item{
+    font-size: 2.5vw;
+  }
+  .nav{
+  display: flex;
+  flex-wrap: wrap;
+background: #319F1C;
+padding: 1.6vw 0 1.6vw 0;
+}
+.arrDown{
+  width: 1.5vw;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+  .item{
+    font-size: 3vw;
+  }
+  .nav{
+  display: flex;
+  flex-wrap: wrap;
+background: #319F1C;
+padding: 1.6vw 0 1.6vw 0;
+}
+.arrDown{
+  width: 1.5vw;
+}
 }
